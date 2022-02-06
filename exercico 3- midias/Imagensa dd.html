@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midas em HTml5</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse em site em dispositivos diferentes ou simplismente aumente e diminue o tamnho do seunavegador.</p>
+
+    <picture>
+      <source media="(max-width:750px )" srcset="Imagens/fotop.jpg" type="image/jpg">
+      <source media="(max-width:1000px )" srcset="Imagens/fotom.jpg" type="image/jpg">
+      <img src="Imagens/fotog.jpg" alt="Foto G">  
+    </picture>
+    <h1>Reproduzinho Áudio</h1>
+    <p>Vamos aprender a reproduzir um áudio em html 5.</p>
+    <audio preload="metadata" autoplay controls loop>
+      <source src="midia/Jason_Mraz_I_m_Yours.wav" type="audio/wav">
+      <source src="midia/Jason_Mraz_I_m_Yours.ogg" type="audio/ogg">
+      <source src="midia/Jason_Mraz_I_m_Yours.mp3" type="audio/mpeg">
+      <!--Audios compativeis, MP3, WAV, OGG-->
+      <p>Infelismente seu navegador não consegue reproduzir essa musica.</p>
+      <p>
+        <a href="midia/Jason_Mraz_I_m_Yours.mp3">Clique aqui para baiar a musica</a>
+      </p>
+    </audio>
+    
+    
+</body>
+</html>
